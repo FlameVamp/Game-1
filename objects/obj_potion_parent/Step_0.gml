@@ -1,15 +1,15 @@
 //setting item weight for potions
 if weight == 0
 	{
-	if (string_pos("Light", name) > 0)
+	if string_pos("Light", name)
 		{
 		weight = 0.25
 		}
-	else if (string_pos("Moderate", name) > 0)
+	else if string_pos("Moderate", name)
 		{
 		weight = 0.5
 		}
-	else if (string_pos("Grand", name) > 0)
+	else if string_pos("Grand", name)
 		{
 		weight = 1.0
 		}

@@ -88,6 +88,16 @@ state = "none"
 inventory = array_create(0, -1)
 equippedItem = undefined
 
+equippedHead = undefined
+equippedChest = undefined
+equippedLegs = undefined
+equippedFootRight = undefined
+equippedFootLeft = undefined
+equippedShoulderRight = undefined
+equippedShoulderLeft = undefined
+equippedArmRight = undefined
+equippedArmLeft = undefined
+
 onWeb = false
 
 //calculating stats

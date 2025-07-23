@@ -14,4 +14,3 @@ unlocked = false
 
 if !layer_exists("loot")
 	{layer_create(100, "loot")}
-array_push(inventory, instance_create_layer(0, 0, "loot", obj_grand_health_potion))

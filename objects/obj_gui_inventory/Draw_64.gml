@@ -66,6 +66,7 @@ if global.toggle_inv
 					
 					//items and selection
 					stack[i][0].image_angle = 0
+					stack[i][0].image_index = 0
 					if sprite_get_height(stack[i][0].sprite_index) == 16
 						{
 						if (window_mouse_get_x() - 44*global.screenRatio > stack[i][0].x - (sprite_get_xoffset(object_get_sprite(stack[i][0].object_index)) + 3)*global.screenRatio + 1 && window_mouse_get_x() - 37*global.screenRatio < stack[i][0].x - 4*global.screenRatio + inv_x - sprite_get_xoffset(object_get_sprite(stack[i][0].object_index))*global.screenRatio + view_w*.81 + 2) && (window_mouse_get_y() - 12*global.screenRatio > stack[i][0].y + inv_y - sprite_get_yoffset(object_get_sprite(stack[i][0].object_index))*global.screenRatio - 15*global.screenRatio && window_mouse_get_y() - 12*global.screenRatio < stack[i][0].y + inv_y + spriteSize - sprite_get_yoffset(object_get_sprite(stack[i][0].object_index))*global.screenRatio - 16*global.screenRatio + 1)
@@ -157,6 +158,27 @@ if global.toggle_inv
 				{
 				obj_player.equippedItem = selectedItem
 				}
+			else if selectedItem != undefined && global.activate_key && selectedItem.type == "Armor"
+				{
+				if selectedItem.slotType == "Head"
+					{obj_player.equippedHead = selectedItem}
+				else if selectedItem.slotType == "Chest"
+					{obj_player.equippedChest = selectedItem}
+				else if selectedItem.slotType == "Legs"
+					{obj_player.equippedLegs = selectedItem}
+				else if selectedItem.slotType == "R Foot"
+					{obj_player.equippedFootRight = selectedItem}
+				else if selectedItem.slotType == "L Foot"
+					{obj_player.equippedFootLeft = selectedItem}
+				else if selectedItem.slotType == "R Shoulder"
+					{obj_player.equippedShoulderRight = selectedItem}
+				else if selectedItem.slotType == "L Shoulder"
+					{obj_player.equippedShoulderLeft = selectedItem}
+				else if selectedItem.slotType == "R Arm"
+					{obj_player.equippedArmRight = selectedItem}
+				else if selectedItem.slotType == "L Arm"
+					{obj_player.equippedArmLeft = selectedItem}
+				}
 			//dropping items and creating a loot bag
 			if selectedItem != undefined && global.drop_key
 				{
@@ -171,6 +193,24 @@ if global.toggle_inv
 				stack = removeItem(inventory, selectedItem, true, 0)
 				if selectedItem == obj_player.equippedItem
 					{obj_player.equippedItem = undefined}
+				else if selectedItem == obj_player.equippedHead
+					{obj_player.equippedHead = undefined}
+				else if selectedItem == obj_player.equippedChest
+					{obj_player.equippedChest = undefined}
+				else if selectedItem == obj_player.equippedLegs
+					{obj_player.equippedLegs = undefined}
+				else if selectedItem == obj_player.equippedFootRight
+					{obj_player.equippedFootRight = undefined}
+				else if selectedItem == obj_player.equippedFootLeft
+					{obj_player.equippedFootLeft = undefined}
+				else if selectedItem == obj_player.equippedShoulderRight
+					{obj_player.equippedShoulderRight = undefined}
+				else if selectedItem == obj_player.equippedShoulderLeft
+					{obj_player.equippedShoulderLeft = undefined}
+				else if selectedItem == obj_player.equippedArmRight
+					{obj_player.equippedArmRight = undefined}
+				else if selectedItem == obj_player.equippedArmLeft
+					{obj_player.equippedArmLeft = undefined}
 				}
 			break;
 		//equipment inv tab

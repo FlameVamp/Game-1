@@ -28,6 +28,7 @@ if inventory != undefined and array_length(inventory) > 0
 			yy = items_y + num * (spriteSize/2 + 2.5*global.screenRatio)
 			
 			stack[i][0].image_angle = 0
+			stack[i][0].image_index = 0
 			if sprite_get_height(stack[i][0].sprite_index) == 16
 					{
 					stack[i][0].x = items_x + 2.33*global.screenRatio + sprite_get_xoffset(object_get_sprite(stack[i][0].object_index))*global.screenRatio/1.5
