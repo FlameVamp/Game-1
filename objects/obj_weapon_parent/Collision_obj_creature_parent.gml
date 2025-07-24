@@ -17,10 +17,7 @@ if !asset_has_any_tag(other.object_index, "container", asset_object) && owner !=
 				{var tempDamage = 0.5*damage}
 			else
 				{var tempDamage = damage}
-			if other.currHealth - tempDamage < 0
-					{other.currHealth = 0; other.state = "dead"}
-				else
-					{other.currHealth -= tempDamage}
+			other.damage(damage)
 			array_push(hit, other)
 			}
 		}

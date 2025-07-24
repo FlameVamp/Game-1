@@ -98,6 +98,10 @@ equippedShoulderLeft = undefined
 equippedArmRight = undefined
 equippedArmLeft = undefined
 
+armorSlots = [equippedHead, equippedChest, equippedLegs, equippedFootRight, equippedFootLeft, equippedShoulderRight, equippedShoulderLeft, equippedArmRight, equippedArmLeft]
+
+armorPoints = 0
+
 onWeb = false
 
 //calculating stats
@@ -120,4 +124,19 @@ function recalculate_stats()
 	
 	if object_index == obj_enemy_spider
 		{jump_spd = attrSpeed/2}
+	}
+	
+	
+function damage(dmg)
+	{
+	for (i = 0; i < array_length(armorSlots); i++)
+		{
+		armorPoints = 0
+		if armorSlots[i] != undefined
+			{armorPoints += armorSlots[i].protection}
+		}
+	if (currHealth - dmg - (dmg*(armorPoints/5))) <= 0
+		{currHealth = 0}
+	else
+		{currHealth -= dmg - (dmg*(armorPoints/5))}
 	}

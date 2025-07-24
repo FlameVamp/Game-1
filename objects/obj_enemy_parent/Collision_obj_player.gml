@@ -8,10 +8,7 @@ if !array_contains(behavior_stack, "dead") && array_contains(behavior_stack, "at
 			}
 		if !inHit
 			{
-			if other.currHealth - meleeDamage < 0
-					{other.currHealth = 0; other.state = "dead"}
-				else
-					{other.currHealth -= meleeDamage}
+			other.damage(meleeDamage)
 
 			if asset_has_any_tag(object_index, "damages_stamina", asset_object)
 				{

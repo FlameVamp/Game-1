@@ -84,7 +84,9 @@ if !pause
 			case RIGHT:
 				if floor(image_index) == 0 or floor(image_index) == 2
 					{equippedLegs.image_index = 5}
-				else if floor(image_index) == 1 or floor(image_index) == 3
+				else if floor(image_index) == 1
+					{equippedLegs.image_index = 7}
+				else if floor(image_index) == 3
 					{equippedLegs.image_index = 6}
 				break;
 			case DOWN:
@@ -98,8 +100,10 @@ if !pause
 			case LEFT:
 				if floor(image_index) == 0 or floor(image_index) == 2
 					{equippedLegs.image_index = 5}
-				else if floor(image_index) == 1 or floor(image_index) == 3
+				else if floor(image_index) == 1
 					{equippedLegs.image_index = 6}
+				else if floor(image_index) == 3
+					{equippedLegs.image_index = 7}
 				break;
 			}
 		}
@@ -140,15 +144,172 @@ if !pause
 				break;
 			}
 		}
-	if equippedFootLeft = undefined
-		{}
+	if equippedFootLeft != undefined
+		{
+		equippedFootLeft.visible = true
+		equippedFootLeft.depth = -1000
+		equippedFootLeft.image_xscale = 1
+		equippedFootLeft.image_yscale = 1
+		equippedFootLeft.x = x - 2
+		equippedFootLeft.y = y + 4
+		equippedFootLeft.image_index = 0
+		switch face
+			{
+			case UP:
+				if floor(image_index) == 3
+					{equippedFootLeft.y = y + 3}
+				break;
+			case RIGHT:
+				equippedFootLeft.image_index = 1
+				if floor(image_index) == 0 or floor(image_index) == 2
+					{equippedFootLeft.visible = false}
+				else if floor(image_index) == 1
+					{equippedFootLeft.x = x - 3 equippedFootLeft.y = y + 3}
+				else if floor(image_index) == 3
+					{equippedFootLeft.x = x}
+				break;
+			case DOWN:
+				equippedFootLeft.x = x
+				if floor(image_index) == 3
+					{equippedFootLeft.y = y + 3}
+				break;
+			case LEFT:
+				if floor(image_index) == 0 or floor(image_index) == 2
+					{equippedFootLeft.x = x - 1}
+				else if floor(image_index) == 3
+					{equippedFootLeft.x = x + 1; equippedFootLeft.y = y + 3}
+				break;
+			}
+		}
 	if equippedShoulderRight != undefined
-		{}
+		{
+		equippedShoulderRight.visible = true
+		equippedShoulderRight.depth = -1000
+		equippedShoulderRight.image_xscale = 1
+		equippedShoulderRight.image_yscale = 1
+		equippedShoulderRight.x = x + 2
+		equippedShoulderRight.y = y - 4
+		equippedShoulderRight.image_index = 0
+		equippedShoulderRight.sprite_index = equippedShoulderRight.sprite
+		switch face
+			{
+			case UP:
+				break;
+			case RIGHT:
+				equippedShoulderRight.image_index = 1
+				equippedShoulderRight.x = x
+				equippedShoulderRight.y = y - 4
+				break;
+			case DOWN:
+				equippedShoulderRight.sprite_index = equippedShoulderRight.otherSide
+				equippedShoulderRight.x = x - 2
+				break;
+			case LEFT:
+				equippedShoulderRight.visible = false
+				break;
+			}
+		}
 	if equippedShoulderLeft != undefined
-		{}
+		{
+		equippedShoulderLeft.visible = true
+		equippedShoulderLeft.depth = -1000
+		equippedShoulderLeft.image_xscale = 1
+		equippedShoulderLeft.image_yscale = 1
+		equippedShoulderLeft.x = x - 2
+		equippedShoulderLeft.y = y - 4
+		equippedShoulderLeft.image_index = 0
+		equippedShoulderLeft.sprite_index = equippedShoulderLeft.sprite
+		switch face
+			{
+			case UP:
+				break;
+			case RIGHT:
+				equippedShoulderLeft.visible = false
+				break;
+			case DOWN:
+				equippedShoulderLeft.sprite_index = equippedShoulderLeft.otherSide
+				equippedShoulderLeft.x = x + 2
+				break;
+			case LEFT:
+				equippedShoulderLeft.image_index = 1
+				equippedShoulderLeft.x = x
+				equippedShoulderLeft.y = y - 4
+				break;
+			}
+		}
 	if equippedArmRight != undefined
-		{}
+		{
+		equippedArmRight.visible = true
+		equippedArmRight.depth = -1000
+		equippedArmRight.image_xscale = 1
+		equippedArmRight.image_yscale = 1
+		equippedArmRight.x = x
+		equippedArmRight.y = y - 2
+		equippedArmRight.image_index = 0
+		switch face
+			{
+			case UP:
+				equippedArmRight.x = x + 2
+				if floor(image_index) == 3
+					{equippedArmRight.image_index = 1}
+				break;
+			case RIGHT:
+				if floor(image_index) == 1
+					{equippedArmRight.image_index = 4}
+				else if floor(image_index) == 3
+					{equippedArmRight.image_index = 5}
+				break;
+			case DOWN:
+				equippedArmRight.x = x - 2
+				if floor(image_index) == 1
+					{equippedArmRight.image_index = 2}
+				break;
+			case LEFT:
+				if floor(image_index) == 0 or floor(image_index) == 2
+					{equippedArmRight.visible = false}
+				else if floor(image_index) == 1
+					{equippedArmRight.image_index = 6}
+				else if floor(image_index) == 3
+					{equippedArmRight.image_index = 7}
+				break;
+			}
+		}
 	if equippedArmLeft != undefined
-		{}
+		{
+		equippedArmLeft.visible = true
+		equippedArmLeft.depth = -1000
+		equippedArmLeft.image_xscale = 1
+		equippedArmLeft.image_yscale = 1
+		equippedArmLeft.x = x
+		equippedArmLeft.y = y - 2
+		equippedArmLeft.image_index = 0
+		switch face
+			{
+			case UP:
+				equippedArmLeft.x = x - 2
+				if floor(image_index) == 1
+					{equippedArmLeft.image_index = 1}
+				break;
+			case RIGHT:
+				if floor(image_index) == 0 or floor(image_index) == 2
+					{equippedArmLeft.visible = false}
+				else if floor(image_index) == 1
+					{equippedArmLeft.image_index = 7}
+				else if floor(image_index) == 3
+					{equippedArmLeft.image_index = 6}
+				break;
+			case DOWN:
+				equippedArmLeft.x = x + 2
+				if floor(image_index) == 3
+					{equippedArmLeft.image_index = 3}
+				break;
+			case LEFT:
+				if floor(image_index) == 1
+					{equippedArmLeft.image_index = 5}
+				else if floor(image_index) == 3
+					{equippedArmLeft.image_index = 4}
+				break;
+			}
+		}
 	}
 

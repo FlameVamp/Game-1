@@ -39,6 +39,7 @@
   "spriteMaskId":null,
   "tags":[
     "armor",
+    "iron",
   ],
   "visible":true,
 }
