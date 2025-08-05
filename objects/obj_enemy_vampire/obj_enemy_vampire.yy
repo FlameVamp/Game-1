@@ -1,21 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_iron_boot_right",
+  "%Name":"obj_enemy_vampire",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_iron_boot_right",
+  "name":"obj_enemy_vampire",
   "overriddenProperties":[],
   "parent":{
-    "name":"Armor",
-    "path":"folders/Objects/Items/Armor.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"obj_armor_parent",
-    "path":"objects/obj_armor_parent/obj_armor_parent.yy",
+    "name":"obj_enemy_parent",
+    "path":"objects/obj_enemy_parent/obj_enemy_parent.yy",
   },
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -33,13 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_iron_boots",
-    "path":"sprites/spr_iron_boots/spr_iron_boots.yy",
+    "name":"spr_vampire",
+    "path":"sprites/spr_vampire/spr_vampire.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "armor",
-    "iron",
-  ],
   "visible":true,
 }

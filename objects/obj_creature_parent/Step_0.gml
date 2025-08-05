@@ -83,6 +83,20 @@ if colObjectY != noone
 	else {yspd = 0}
 	}
 
+if ((xspd != 0 or yspd != 0) or pathing) && particleTimer == ogParticleTimer
+		{
+		var partSys = part_system_create(part_step)
+		var particle = particle_get_info(part_step).emitters[0].parttype.ind;
+		part_particles_create(partSys, x, y + (bbox_bottom - y)/2 + 2, particle, 1)
+		particleTimer--
+		}
+else if particleTimer < ogParticleTimer
+	{
+	if particleTimer <= 0
+		{particleTimer = ogParticleTimer}
+	else
+		{particleTimer--}
+	}
 
 x += xspd;
 y += yspd;

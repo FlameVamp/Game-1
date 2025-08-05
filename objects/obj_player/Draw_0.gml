@@ -6,7 +6,7 @@ if !pause
 	if equippedHead != undefined
 		{
 		equippedHead.visible = true
-		equippedHead.depth = -1000
+		equippedHead.depth = depth - 1
 		equippedHead.image_xscale = 1
 		equippedHead.image_yscale = 1
 		equippedHead.x = x
@@ -32,7 +32,7 @@ if !pause
 	if equippedChest != undefined
 		{
 		equippedChest.visible = true
-		equippedChest.depth = -1000
+		equippedChest.depth = depth - 1
 		equippedChest.image_xscale = 1
 		equippedChest.image_yscale = 1
 		equippedChest.x = x
@@ -66,7 +66,7 @@ if !pause
 	if equippedLegs != undefined
 		{
 		equippedLegs.visible = true
-		equippedLegs.depth = -1000
+		equippedLegs.depth = depth - 1
 		equippedLegs.image_xscale = 1
 		equippedLegs.image_yscale = 1
 		equippedLegs.x = x
@@ -110,7 +110,7 @@ if !pause
 	if equippedFootRight != undefined
 		{
 		equippedFootRight.visible = true
-		equippedFootRight.depth = -1000
+		equippedFootRight.depth = depth - 1
 		equippedFootRight.image_xscale = 1
 		equippedFootRight.image_yscale = 1
 		equippedFootRight.x = x
@@ -147,7 +147,7 @@ if !pause
 	if equippedFootLeft != undefined
 		{
 		equippedFootLeft.visible = true
-		equippedFootLeft.depth = -1000
+		equippedFootLeft.depth = depth - 1
 		equippedFootLeft.image_xscale = 1
 		equippedFootLeft.image_yscale = 1
 		equippedFootLeft.x = x - 2
@@ -184,7 +184,7 @@ if !pause
 	if equippedShoulderRight != undefined
 		{
 		equippedShoulderRight.visible = true
-		equippedShoulderRight.depth = -1000
+		equippedShoulderRight.depth = depth - 1
 		equippedShoulderRight.image_xscale = 1
 		equippedShoulderRight.image_yscale = 1
 		equippedShoulderRight.x = x + 2
@@ -212,7 +212,7 @@ if !pause
 	if equippedShoulderLeft != undefined
 		{
 		equippedShoulderLeft.visible = true
-		equippedShoulderLeft.depth = -1000
+		equippedShoulderLeft.depth = depth - 1
 		equippedShoulderLeft.image_xscale = 1
 		equippedShoulderLeft.image_yscale = 1
 		equippedShoulderLeft.x = x - 2
@@ -240,7 +240,7 @@ if !pause
 	if equippedArmRight != undefined
 		{
 		equippedArmRight.visible = true
-		equippedArmRight.depth = -1000
+		equippedArmRight.depth = depth - 1
 		equippedArmRight.image_xscale = 1
 		equippedArmRight.image_yscale = 1
 		equippedArmRight.x = x
@@ -277,7 +277,7 @@ if !pause
 	if equippedArmLeft != undefined
 		{
 		equippedArmLeft.visible = true
-		equippedArmLeft.depth = -1000
+		equippedArmLeft.depth = depth - 1
 		equippedArmLeft.image_xscale = 1
 		equippedArmLeft.image_yscale = 1
 		equippedArmLeft.x = x

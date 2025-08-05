@@ -25,11 +25,15 @@ with(all)
 			list[3] = inventory
 			list[4] = currHealth
 			list[5] = []
-			for (var i = 0; i < array_length(home_web); i++)
+			if object_index == obj_enemy_spider
 				{
-				if instance_exists(home_web[i])
-					{array_push(list[5], [home_web[i].x, home_web[i].y])}
+				for (var i = 0; i < array_length(home_web); i++)
+					{
+					if instance_exists(home_web[i])
+						{array_push(list[5], [home_web[i].x, home_web[i].y])}
+					}
 				}
+			else {list[5] = undefined}
 			if currHealth > 0
 				{
 				list[6] = level

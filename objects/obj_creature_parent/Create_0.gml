@@ -98,16 +98,26 @@ equippedShoulderLeft = undefined
 equippedArmRight = undefined
 equippedArmLeft = undefined
 
-armorSlots = [equippedHead, equippedChest, equippedLegs, equippedFootRight, equippedFootLeft, equippedShoulderRight, equippedShoulderLeft, equippedArmRight, equippedArmLeft]
+equippedNeck = undefined
+equippedFingerLeft = undefined
+equippedFingerRight = undefined
+
+armorSlots = [equippedHead, equippedChest, equippedLegs, equippedFootRight, equippedFootLeft, equippedShoulderRight, equippedShoulderLeft, equippedArmRight, equippedArmLeft, equippedNeck, equippedFingerLeft, equippedFingerRight]
 
 armorPoints = 0
 
 onWeb = false
 
+ogParticleTimer = 2*(attrSpeed/4)
+particleTimer = ogParticleTimer
+
+pathing = false
+
 //calculating stats
 function recalculate_stats()
 	{
 	image_speed = attrSpeed/4
+	ogParticleTimer = 2*(attrSpeed/4)
 	
 	baseHealth = 20*attrStrength
 	maxHealth = baseHealth
