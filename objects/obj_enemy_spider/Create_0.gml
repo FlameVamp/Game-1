@@ -31,7 +31,7 @@ currMagicka = maxMagicka
 
 magickaDamage = 10
 
-meleeDamage = 5
+meleeDamage = attrStrength*2
 
 jump_spd = 0
 

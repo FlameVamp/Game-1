@@ -82,6 +82,10 @@ in_combat = false
 
 pause = false
 
+leftLatch = undefined
+rightLatch = undefined
+
+
 //heal player health/stamina/magicka
 function heal(item, amount)
 	{

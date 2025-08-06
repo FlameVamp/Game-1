@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_vampire_attack",
+  "%Name":"spr_vampire_attack_head",
   "bboxMode":2,
   "bbox_bottom":13,
   "bbox_left":6,
@@ -13,18 +13,18 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"8ae74e33-6f01-4061-9dba-8146ef3b865e","name":"8ae74e33-6f01-4061-9dba-8146ef3b865e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c9b7c627-d048-403c-822f-08afa3592b7c","name":"c9b7c627-d048-403c-822f-08afa3592b7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8a67ff4e-0321-4099-b349-cc307a1dcaed","name":"8a67ff4e-0321-4099-b349-cc307a1dcaed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c9ff0d4b-d125-487b-99f7-078874ebc40f","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"c9ff0d4b-d125-487b-99f7-078874ebc40f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c9ff0d4b-d125-487b-99f7-078874ebc40f","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"c9ff0d4b-d125-487b-99f7-078874ebc40f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"3a33d13f-248a-41c3-bd46-72ccd4f1b8b3","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"3a33d13f-248a-41c3-bd46-72ccd4f1b8b3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
-    {"$GMImageLayer":"","%Name":"7f4b3264-27e6-4cd6-b023-ffc616911720","blendMode":0,"displayName":"default","isLocked":false,"name":"7f4b3264-27e6-4cd6-b023-ffc616911720","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"7f4b3264-27e6-4cd6-b023-ffc616911720","blendMode":0,"displayName":"default","isLocked":false,"name":"7f4b3264-27e6-4cd6-b023-ffc616911720","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_vampire_attack",
+  "name":"spr_vampire_attack_head",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -36,7 +36,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_vampire_attack",
+    "%Name":"spr_vampire_attack_head",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_vampire_attack",
+    "name":"spr_vampire_attack_head",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -74,11 +74,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ae74e33-6f01-4061-9dba-8146ef3b865e","path":"sprites/spr_vampire_attack/spr_vampire_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ae74e33-6f01-4061-9dba-8146ef3b865e","path":"sprites/spr_vampire_attack_head/spr_vampire_attack_head.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"180c48f0-3700-4968-bcfb-2b178c6b0538","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c9b7c627-d048-403c-822f-08afa3592b7c","path":"sprites/spr_vampire_attack/spr_vampire_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ce4979ca-8634-4520-bfc2-d91ffe0536fe","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8a67ff4e-0321-4099-b349-cc307a1dcaed","path":"sprites/spr_vampire_attack_head/spr_vampire_attack_head.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"de5cd4ad-faa9-43df-8d9a-1c250e41b2a2","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

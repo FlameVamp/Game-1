@@ -130,7 +130,8 @@ function recalculate_stats()
 	
 	move_spd = 0.08*attrSpeed
 	
-	baseMeleeDamage = attrStrength
+	baseMeleeDamage = attrStrength*2
+	meleeDamage = baseMeleeDamage
 	
 	if object_index == obj_enemy_spider
 		{jump_spd = attrSpeed/2}
@@ -149,4 +150,12 @@ function damage(dmg)
 		{currHealth = 0}
 	else
 		{currHealth -= dmg - (dmg*(armorPoints/5))}
+		
+	if object_index == obj_enemy_vampire
+		{
+		if irandom_range(0, 9) == 0
+			{
+			unlatch()
+			}
+		}
 	}

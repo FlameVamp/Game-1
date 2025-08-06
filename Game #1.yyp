@@ -52,6 +52,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_armor_parent","path":"objects/obj_armor_parent/obj_armor_parent.yy",},},
+    {"id":{"name":"obj_attacking_vampire_head","path":"objects/obj_attacking_vampire_head/obj_attacking_vampire_head.yy",},},
     {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
     {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},},
     {"id":{"name":"obj_creature_parent","path":"objects/obj_creature_parent/obj_creature_parent.yy",},},
@@ -155,6 +156,7 @@
     {"id":{"name":"spr_slash","path":"sprites/spr_slash/spr_slash.yy",},},
     {"id":{"name":"spr_spider_old","path":"sprites/spr_spider_old/spr_spider_old.yy",},},
     {"id":{"name":"spr_spider","path":"sprites/spr_spider/spr_spider.yy",},},
+    {"id":{"name":"spr_vampire_attack_head","path":"sprites/spr_vampire_attack_head/spr_vampire_attack_head.yy",},},
     {"id":{"name":"spr_vampire_attack","path":"sprites/spr_vampire_attack/spr_vampire_attack.yy",},},
     {"id":{"name":"spr_vampire","path":"sprites/spr_vampire/spr_vampire.yy",},},
     {"id":{"name":"spr_wall_half","path":"sprites/spr_wall_half/spr_wall_half.yy",},},

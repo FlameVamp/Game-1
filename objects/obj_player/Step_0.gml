@@ -142,6 +142,16 @@ if !pause
 	//dash
 	if dash_key and currStamina >= dashCost and not dashing and not dashed and not swing
 		{
+		if leftLatch != undefined
+			{
+			var detach = irandom_range(0, 1)
+			if detach {leftLatch.unlatch()}
+			}
+		if rightLatch != undefined
+			{
+			var detach = irandom_range(0, 1)
+			if detach {rightLatch.unlatch()}
+			}
 		currStamina -= dashCost
 		dashing = true
 		if xspd > 0
