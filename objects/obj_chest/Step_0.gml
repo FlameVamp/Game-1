@@ -1,7 +1,10 @@
 //unlocking with connected activator object
-if unlocker == undefined {unlocked = true}
-else if unlocker.pressed {unlocked = true}
-else {unlocked = false}
+
+for (var i = 0; i < array_length(unlocker); i++)
+	{
+	if unlocker[i].pressed {unlocked = true}
+	else {unlocked = false; break}
+	}
 
 if !unlocked {open = false}
 

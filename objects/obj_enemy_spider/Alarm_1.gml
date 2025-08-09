@@ -111,7 +111,7 @@ if state != "dead"
 									event_perform(ev_step, 0)
 									for (var i = 0; i < array_length(neighbors); i++)
 										{
-										if neighbors[i] != -1 && !array_contains(other.home_web, neighbors[i]) && neighbors[i].object_index != obj_wall
+										if neighbors[i] != -1 && !array_contains(other.home_web, neighbors[i]) && !object_is_ancestor(neighbors[i], obj_wall)
 											{other.run()}
 										}
 									}

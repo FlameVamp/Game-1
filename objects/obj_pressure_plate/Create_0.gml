@@ -1,6 +1,6 @@
-push_weight = 0
+event_inherited()
 
-pressed = false
+push_weight = 0
 
 pusher_list = [
 	obj_player,

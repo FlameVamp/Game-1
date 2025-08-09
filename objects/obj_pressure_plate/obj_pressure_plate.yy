@@ -14,7 +14,10 @@
     "name":"World Objects",
     "path":"folders/Objects/World Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_activator_parent",
+    "path":"objects/obj_activator_parent/obj_activator_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

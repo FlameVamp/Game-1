@@ -20,7 +20,7 @@ for (var i = 1; i < 5; i++)
 			case UP: xspd = 0
 				if object.x > xLoc + sprite_width/2 - 1 && object.x < xLoc - sprite_width/2 + 1
 					{yspd = 0}
-				if object.y < yLoc + sprite_height/2
+				if object.y < yLoc + sprite_height/2 - 2
 					{yspd = 0}
 					break;
 			case DOWN: xspd = 0
