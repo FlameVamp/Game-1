@@ -1,6 +1,8 @@
 randomize()
 event_inherited()
 
+global.activate_key = keyboard_check_pressed(ord("F"))
+
 //sprite assignment
 sprite[RIGHT] = spr_player_right;
 sprite[DOWN] = spr_player_down;

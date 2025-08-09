@@ -1,9 +1,19 @@
 //unlocking with connected activator object
 
+var count = 0
+var unlock = true
 for (var i = 0; i < array_length(unlocker); i++)
 	{
-	if unlocker[i].pressed {unlocked = true}
-	else {unlocked = false; break}
+	if array_contains(unlocker[i].negative, id)
+		{
+		if !unlocker[i].pressed {count += 1}
+		else {unlock = false}
+		}
+	else
+		{
+		if unlocker[i].pressed {count += 1}
+		else {unlock = false}
+		}
 	}
 
 if !unlocked {open = false}
